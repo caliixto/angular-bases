@@ -7,12 +7,13 @@ import { LazyImageComponent } from './components/lazy-image/lazy-image.component
 
 @NgModule({
   declarations: [
-    SidebarComponent,
-    LazyImageComponent
+    SidebarComponent, LazyImageComponent
   ],
   imports: [
     CommonModule
   ],
-  exports: [SidebarComponent, LazyImageComponent]
+  exports: [
+    SidebarComponent, LazyImageComponent,
+  ]
 })
 export class SharedModule { }
