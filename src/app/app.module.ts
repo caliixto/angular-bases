@@ -1,11 +1,16 @@
+
 import { HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+
 
 import { GifsModule } from './gifs/gifs.module';
 import { SharedModule } from './shared/shared.module';
 
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
+import { CounterModule } from './counter/counter.module';
+import {HeroesModule} from './heroes/heroes.module';
+import {DbzModule} from './dbz/dbz.module';
 
 
 @NgModule({
@@ -14,7 +19,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    GifsModule, SharedModule, HttpClientModule
+    GifsModule, SharedModule, HttpClientModule,
+    CounterModule,
+    HeroesModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]
