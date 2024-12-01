@@ -47,7 +47,8 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/angular-bases/"
             },
             "development": {
               "buildOptimizer": false,
